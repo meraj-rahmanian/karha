@@ -174,7 +174,7 @@ export default function Home() {
             «سایت جدیدمان در سه ماه اول، سفارش آنلاین را دو برابر کرد.»
           </blockquote>
           <p className="text-sm text-[#857F6B] mt-4">
-            - مدیر فروشگاه چیدمان، مشتری کدپارس
+            - مدیر فروشگاه چیدمان، مشتری کارها
           </p>
         </div>
       </section>
