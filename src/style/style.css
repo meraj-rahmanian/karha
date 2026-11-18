@@ -1,0 +1,67 @@
+.main-btn{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 14px 28px 14px 28px;
+    background-color: #B3352B;
+    cursor: pointer;
+}
+.main-btn:hover{
+    background-color: #8F271E;
+}
+.second-btn{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    padding: 14px 28px 14px 28px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.second-btn:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.nav-item{
+    position: relative;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+.nav-item::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 999px;
+    background-color: #B3352B;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s ease;
+}
+.nav-item:hover::after,
+.nav-item.active::after,
+.nav-item:focus-visible::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.res_items{
+    height: 52px;
+    width: 100%;
+    border: black solid 1px;
+    color: #23201D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+.res_items.active{
+    background-color: #B3352B;
+    color: white;
+}
