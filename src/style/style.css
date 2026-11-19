@@ -65,3 +65,13 @@
     background-color: #B3352B;
     color: white;
 }
+.service_header{
+    font-size: 32px;
+    font-weight: 800;
+    color: black;
+}
+.service_dis{
+    font-size: 20px;
+    font-weight: 400;
+    color: #23201D;
+}
