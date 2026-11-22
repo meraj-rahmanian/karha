@@ -1,16 +1,43 @@
-# React + Vite
+# کارها
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+وبسایت نمونهٔ یک شرکت برنامه‌نویسی ایرانی، ساخته‌شده با **HTML**، **CSS** و **JavaScript**.
 
-Currently, two official plugins are available:
+## دربارهٔ پروژه
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+این پروژه یک **تمرین آموزشی** است. طرح (دیزاین) سایت را هوش مصنوعی (AI) در اختیار من گذاشته و ایدهٔ آن از ظاهر و ساختار وب‌سایت شرکت‌های برنامه‌نویسی ایرانی الهام گرفته شده است.
 
-## React Compiler
+به دلیل سادگی طرح، ساخت این سایت حدود **دو هفته** زمان برد.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## زبان
 
-## Expanding the ESLint configuration
+سایت فقط از **زبان فارسی** پشتیبانی می‌کند (راست‌چین، فونت وزیرمتن و اعداد فارسی) و نسخهٔ زبان دیگری ندارد.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## امکانات و ویژگی‌ها
+
+- **۵ صفحه:** خانه، خدمات، نمونه‌کارها، درباره ما، تماس
+- **هدر چسبان** با مشخص‌شدن لینک صفحهٔ فعال، و **فوتر** مشترک در همهٔ صفحه‌ها
+- **منوی همبرگری** در موبایل و تبلت که باز و بسته می‌شود
+- **صفحهٔ خانه** شامل هیرو، آمار، خدمات، نمونه‌کارهای منتخب، مراحل کار، نظر مشتری و دعوت به تماس
+- **صفحهٔ خدمات** شامل فهرست خدمات، جدول مقایسهٔ بسته‌ها و پرسش‌های پرتکرار به‌صورت آکاردئونی
+- **صفحهٔ نمونه‌کارها** همراه با **فیلتر دسته‌بندی** (همه، وبسایت، فروشگاه، اپلیکیشن)
+- **صفحهٔ درباره ما** شامل داستان شرکت، ارزش‌ها، اعضای تیم و خط زمانی
+- **صفحهٔ تماس** با فرم و **اعتبارسنجی** (فیلدهای ضروری و شمارهٔ تماس فقط عددی)
+- سبک طراحی خط‌محور و تیز، با تیترهای درشت و فقط دو رنگ لهجه (سرخ و خردلی)
+
+## ریسپانسیو
+
+سایت برای **همهٔ دستگاه‌ها** ریسپانسیو شده و روی این کار زمان گذاشته شده است:
+
+| دستگاه | عرض صفحه |
+| --- | --- |
+| موبایل | کمتر از ۶۴۰ پیکسل |
+| تبلت | ۶۴۰ تا ۱۰۲۴ پیکسل |
+| دسکتاپ | بیشتر از ۱۰۲۴ پیکسل |
+
+## تصاویر
+
+تمام **تصاویر** داخل این سایت با **هوش مصنوعی** ساخته شده‌اند.
+
+## نکتهٔ مهم
+
+همهٔ **نام‌ها، شرکت‌ها، نشانی‌ها، شماره‌ها و ایمیل‌های** داخل سایت **نمایشی** هستند و **هیچ‌کدام واقعی نیستند**. هرگونه شباهت به افراد یا شرکت‌های واقعی کاملاً اتفاقی است.

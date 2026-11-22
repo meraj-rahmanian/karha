@@ -40,10 +40,10 @@ export default function About() {
       <section className="py-12 md:py-24">
         <div className="max-w-300 mx-auto px-6 md:px-8 flex flex-col gap-6">
           <h1 className="text-[32px] md:text-[48px] font-extrabold leading-tight max-w-3xl">
-            ما کدپارسیم؛ یک تیم کوچک و دقیق.
+            ما «کارها» هستیم؛ یک تیم کوچک و دقیق.
           </h1>
           <p className="text-[16px] leading-8 max-w-2xl">
-            کدپارس از سال ۱۳۹۷ با سه نفر شروع شد و امروز با یک تیم ۱۲ نفره، برای
+            کارها از سال ۱۳۹۷ با سه نفر شروع شد و امروز با یک تیم ۱۲ نفره، برای
             کسب‌وکارهای ایرانی وبسایت و نرم‌افزار می‌سازد. اصل کار ما ساده است:
             کم‌حرفی در وعده، دقت در تحویل.
           </p>
