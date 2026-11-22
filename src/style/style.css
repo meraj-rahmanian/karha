@@ -75,3 +75,20 @@
     font-weight: 400;
     color: #23201D;
 }
+.filter_style{
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+    border: black solid 2px;
+    padding: 4px 8px 4px 8px;
+    transition: transform 300ms ease;
+}
+.filter_style_active{
+    background-color: black;
+    color: white;
+}
+@media (prefers-reduced-motion: reduce){
+    .filter_style{
+        transition: none;
+    }
+}
