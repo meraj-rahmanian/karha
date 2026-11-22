@@ -1,5 +1,12 @@
 # کارها
 
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-7-CA4245?logo=reactrouter&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-F7DF1E?logo=javascript&logoColor=black)
+![Last commit](https://img.shields.io/github/last-commit/meraj-rahmanian/karha)
+
 وب‌سایت نمونهٔ یک شرکت برنامه‌نویسی ایرانی — ساخته‌شده با **React** و **Vite** و **Tailwind CSS**.
 
 > این پروژه یک **تمرین آموزشی** است؛ تکلیف درسی برای ساخت یک وب‌سایت شرکتی ساده با React. طرح (دیزاین) سایت را هوش مصنوعی در اختیار من گذاشته و ایدهٔ آن از ظاهر و ساختار وب‌سایت شرکت‌های برنامه‌نویسی ایرانی الهام گرفته شده است.
