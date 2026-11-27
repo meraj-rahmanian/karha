@@ -139,30 +139,39 @@ export default function Home() {
           <h2 className="text-2xl sm:text-[32px] font-extrabold mb-8">
             از ایده تا تحویل
           </h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="border-t-2 border-[#B3352B] pt-4">
-              <span className="text-sm font-semibold text-[#B3352B]">۱</span>
-              <h3 className="text-lg sm:text-xl font-bold mb-1">شنیدن</h3>
-              <p className="text-base text-[#857F6B]">
-                جلسه‌ی شناخت نیاز و هدف
-              </p>
-            </div>
-            <div className="border-t-2 border-[#B3352B] pt-4">
-              <span className="text-sm font-semibold text-[#B3352B]">۲</span>
-              <h3 className="text-lg sm:text-xl font-bold mb-1">طراحی</h3>
-              <p className="text-base text-[#857F6B]">طرح اولیه و تایید شما</p>
-            </div>
-            <div className="border-t-2 border-[#B3352B] pt-4">
-              <span className="text-sm font-semibold text-[#B3352B]">۳</span>
-              <h3 className="text-lg sm:text-xl font-bold mb-1">ساخت</h3>
-              <p className="text-base text-[#857F6B]">
-                کدنویسی و تست روی موبایل
-              </p>
-            </div>
-            <div className="border-t-2 border-[#B3352B] pt-4">
-              <span className="text-sm font-semibold text-[#B3352B]">۴</span>
-              <h3 className="text-lg sm:text-xl font-bold mb-1">تحویل</h3>
-              <p className="text-base text-[#857F6B]">آموزش و پشتیبانی</p>
+
+          <div className="relative">
+            <div
+              className="
+                absolute z-0 bg-[#B3352B]
+                top-6 bottom-6 left-6 w-0.5
+                md:top-6 md:bottom-auto md:left-0 md:right-0 md:h-0.5 md:w-auto
+              "
+            />
+
+            <div className="flex flex-col gap-8 md:flex-row md:gap-6 relative z-10">
+              {[
+                { n: "۱", title: "شنیدن", text: "جلسه‌ی شناخت نیاز و هدف" },
+                { n: "۲", title: "طراحی", text: "طرح اولیه و تایید شما" },
+                { n: "۳", title: "ساخت", text: "کدنویسی و تست روی موبایل" },
+                { n: "۴", title: "تحویل", text: "آموزش و پشتیبانی" },
+              ].map((step) => (
+                <div
+                  key={step.n}
+                  className="flex-1 flex items-start md:flex-col gap-4 md:gap-3"
+                >
+                  <div className="w-12 h-12 shrink-0 rounded-full border-2 border-[#B3352B] bg-[#F7F3EC] flex items-center justify-center font-bold text-[#B3352B] z-10">
+                    {step.n}
+                  </div>
+
+                  <div className="flex flex-col gap-1 md:text-center">
+                    <h3 className="text-lg sm:text-xl font-bold">
+                      {step.title}
+                    </h3>
+                    <p className="text-base text-[#857F6B]">{step.text}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

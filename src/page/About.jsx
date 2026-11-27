@@ -8,30 +8,36 @@ const team = [
   {
     name: "سارا محمدی",
     role: "مدیر محصول",
-    image: "https://i.pravatar.cc/400?img=47", // زن حرفه‌ای
+    image: "https://i.pravatar.cc/400?img=47",
   },
   {
     name: "امیر رضایی",
     role: "توسعه‌دهنده ارشد",
-    image: "https://i.pravatar.cc/400?img=12", // مرد حرفه‌ای
+    image: "https://i.pravatar.cc/400?img=12",
   },
   {
     name: "نگار کریمی",
     role: "طراح رابط کاربری",
-    image: "https://i.pravatar.cc/400?img=32", // زن طراح
+    image: "https://i.pravatar.cc/400?img=32",
   },
   {
     name: "رضا احمدی",
     role: "توسعه‌دهنده موبایل",
-    image: "https://i.pravatar.cc/400?img=33", // مرد توسعه‌دهنده
+    image: "https://i.pravatar.cc/400?img=33",
   },
 ];
 
 const timeline = [
-  { year: "۱۳۹۷", text: "شروع کار" },
-  { year: "۱۳۹۹", text: "اولین فروشگاه اینترنتی" },
+  { year: "۱۳۸۷", text: "شروع کار با دو نفر در یک اتاق کوچک" },
+  { year: "۱۳۸۹", text: "اولین پروژهٔ بزرگ: وبسایت یک شرکت تولیدی" },
+  { year: "۱۳۹۱", text: "راه‌اندازی اولین فروشگاه اینترنتی" },
+  { year: "۱۳۹۳", text: "عبور از ۵۰ پروژه و اضافه شدن تیم طراحی" },
+  { year: "۱۳۹۵", text: "شروع همکاری با برندهای ملی" },
+  { year: "۱۳۹۷", text: "تیم ۷ نفره و دفتر جدید" },
+  { year: "۱۳۹۹", text: "ورود به توسعهٔ اپلیکیشن موبایل" },
   { year: "۱۴۰۱", text: "عبور از ۱۰۰ پروژه" },
-  { year: "۱۴۰۴", text: "تیم ۱۲ نفره" },
+  { year: "۱۴۰۳", text: "راه‌اندازی واحد پشتیبانی اختصاصی" },
+  { year: "۱۴۰۴", text: "تیم ۱۲ نفره و تمرکز بر پروژه‌های بزرگ" },
 ];
 
 export default function About() {
@@ -120,18 +126,32 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6 md:gap-0">
-            {timeline.map((item) => (
-              <div
-                key={item.year}
-                className="flex-1 border-s-[3px] md:border-s-0 md:border-t-[3px] border-[#B3352B] ps-4 md:ps-0 md:pt-4 flex flex-col gap-1"
-              >
-                <span className="text-[24px] md:text-[32px] font-extrabold">
-                  {item.year}
-                </span>
-                <span className="text-[16px] text-[#857F6B]">{item.text}</span>
+          <div className="relative">
+            <div className="absolute top-6 left-0 right-0 h-0.5 bg-[#B3352B] z-0" />
+
+            <div className="overflow-x-auto pb-4 [scrollbar-width:thin]">
+              <div className="flex gap-8 min-w-max px-2">
+                {timeline.map((item) => (
+                  <div
+                    key={item.year}
+                    className="relative z-10 flex flex-col items-center gap-3 w-40 shrink-0"
+                  >
+                    <div className="w-12 h-12 rounded-full border-2 border-[#B3352B] bg-[#F7F3EC] flex items-center justify-center font-bold text-[#B3352B]">
+                      {item.year.slice(-2)}
+                    </div>
+
+                    <div className="flex flex-col items-center gap-1 text-center">
+                      <span className="text-[20px] md:text-[24px] font-extrabold">
+                        {item.year}
+                      </span>
+                      <span className="text-[14px] text-[#857F6B]">
+                        {item.text}
+                      </span>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
